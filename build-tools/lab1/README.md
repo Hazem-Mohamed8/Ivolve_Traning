@@ -1,5 +1,3 @@
-# Lab 1: Building and Packaging a Java Application with Maven
-
 ## 1. Install Java and Maven
 
 ```bash
