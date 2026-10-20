@@ -4,9 +4,6 @@
 sudo apt update && sudo apt install -y openjdk-17-jdk maven
 java -version
 ```
-
-![versions](screenshots/01-versions.png)
-
 ## 2. Clone the source code
 
 ```bash
