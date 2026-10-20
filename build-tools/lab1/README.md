@@ -1,13 +1,10 @@
 # Lab 1: Building and Packaging a Java Application with Maven
 
-Source code: https://github.com/Ibrahim-Adel15/CalculatorMavenApp.git
-
 ## 1. Install Java and Maven
 
 ```bash
 sudo apt update && sudo apt install -y openjdk-17-jdk maven
 java -version
-mvn -version
 ```
 
 ![versions](screenshots/01-versions.png)
@@ -50,7 +47,3 @@ java -jar target/calculator.jar
 ```
 
 ![run](screenshots/06-run.png)
-
-## Result
-
-The application was built with Maven, the unit tests passed, and the generated `calculator.jar` runs correctly.
