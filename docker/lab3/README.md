@@ -62,8 +62,6 @@ mvn package
 ls target/calculator.jar
 ```
 
-![local build](screenshots/05-local-build.png)
-
 Build the image:
 
 ```bash
