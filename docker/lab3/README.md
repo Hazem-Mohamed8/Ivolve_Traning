@@ -39,15 +39,6 @@ docker run -it --name container1 app1
 
 ![run container1](screenshots/03-container1-run.png)
 
-Delete the container and the image:
-
-```bash
-docker rm -f container1
-docker rmi app1
-```
-
-![cleanup app1](screenshots/04-app1-cleanup.png)
-
 ---
 
 ## Part 2: Build Locally (`Dockerfile.2`)
@@ -96,8 +87,6 @@ docker run -it --name container2 app2
 ```
 
 ![run container2](screenshots/08-container2-run.png)
-
-![cleanup app2](screenshots/09-app2-cleanup.png)
 
 ---
 
