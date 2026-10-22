@@ -50,10 +50,4 @@ trivy image --severity HIGH,CRITICAL --ignore-unfixed --format template \
   --template "@/usr/local/share/trivy/templates/html.tpl" \
   -o report-v2.html ivolve-app:v2
 trivy image --severity HIGH,CRITICAL --ignore-unfixed --exit-code 1 ivolve-app:v2
-echo $?    # 0 = no fixable HIGH/CRITICAL vulnerabilities remain
 ```
-
-| Image | HIGH | CRITICAL |
-|-------|------|----------|
-| trivy-lab:v1 | 2148 | 222 |
-| ivolve-app:v2 | _fill in from report-v2.html_ | _fill in_ |
