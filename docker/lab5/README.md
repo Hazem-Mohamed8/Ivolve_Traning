@@ -16,11 +16,11 @@ trivy --version
 ## 3. Scan
 
 ```bash
-trivy image trivy-lab:v1                                    # all severities
-trivy image --severity HIGH,CRITICAL trivy-lab:v1           # only HIGH and CRITICAL
+trivy image trivy-lab:v1                                    
+trivy image --severity HIGH,CRITICAL trivy-lab:v1           
 trivy image --severity HIGH,CRITICAL --format template \
-  --template "@/usr/local/share/trivy/templates/html.tpl" \
-  -o report-v1.html trivy-lab:v1                            # HTML report
+  --template "html.tpl" \
+  -o report-v1.html trivy-lab:v1                            
 ```
 
 ## 4. Results for trivy-lab:v1
@@ -47,7 +47,7 @@ docker rm -f test
 
 ```bash
 trivy image --severity HIGH,CRITICAL --ignore-unfixed --format template \
-  --template "@/usr/local/share/trivy/templates/html.tpl" \
+  --template "html.tpl" \
   -o report-v2.html ivolve-app:v2
 trivy image --severity HIGH,CRITICAL --ignore-unfixed --exit-code 1 ivolve-app:v2
 ```
