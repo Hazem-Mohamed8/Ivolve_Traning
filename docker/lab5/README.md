@@ -18,21 +18,10 @@ trivy --version
 ```bash
 trivy image trivy-lab:v1                                    
 trivy image --severity HIGH,CRITICAL trivy-lab:v1           
-trivy image --severity HIGH,CRITICAL --format template \
-  --template "html.tpl" \
-  -o report-v1.html trivy-lab:v1                            
+trivy image --severity HIGH,CRITICAL --format template --template "html.tpl" -o report-v1.html trivy-lab:v1                            
 ```
 
-## 4. Results for trivy-lab:v1
-
-| Item | Value |
-|------|-------|
-| Base OS | Debian 11.11 (bullseye) |
-| HIGH | 2148 |
-| CRITICAL | 222 |
-| With a fix available | 1114 HIGH, 183 CRITICAL |
-
-## 5. Remediation (ivolve-app:v2)
+## 4. Remediation (ivolve-app:v2)
 
 Changes (see `Dockerfile` and `package.json`):
 
@@ -43,11 +32,9 @@ curl localhost:3000 && curl localhost:3000/health
 docker rm -f test
 ```
 
-## 6. Rescan and verify
+## 5. Rescan and verify
 
 ```bash
-trivy image --severity HIGH,CRITICAL --ignore-unfixed --format template \
-  --template "html.tpl" \
-  -o report-v2.html ivolve-app:v2
+trivy image --severity HIGH,CRITICAL --ignore-unfixed --format template --template "html.tpl" -o report-v2.html ivolve-app:v2
 trivy image --severity HIGH,CRITICAL --ignore-unfixed --exit-code 1 ivolve-app:v2
 ```
