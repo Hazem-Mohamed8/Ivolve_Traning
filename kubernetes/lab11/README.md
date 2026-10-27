@@ -33,16 +33,16 @@ kubectl apply -f quota.yaml
 kubectl describe resourcequota ivolvequota -n ivolve
 ```
 
-![Quota applied](images/2)
+![Quota applied](images/2.png)
 
 ```bash
 kubectl create deployment nginx-test --image=nginx --replicas=3 -n ivolve
 ```
 
-![pod4 rejected](images/1)
+![pod4 rejected](images/1.png)
 
 ```bash
 kubectl describe resourcequota ivolvequota -n ivolve
 ```
 
-![Quota full](images/3)
+![Quota full](images/3.png)
