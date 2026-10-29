@@ -1,25 +1,5 @@
 # Lab 13: Persistent Storage Setup for Application Logging
 
-## Objective
-Create a PersistentVolume (PV) and a PersistentVolumeClaim (PVC) to store application logs.
-
-## Files
-- `pv.yaml` : PersistentVolume
-- `pvc.yaml` : PersistentVolumeClaim
-
-## Specifications
-
-| Item | PV | PVC |
-|------|----|-----|
-| Name | ivolvepv | ivolvepvc |
-| Size | 1Gi | 1Gi |
-| Access mode | ReadWriteMany | ReadWriteMany |
-| Storage type | hostPath (`/mnt/app-logs`) | - |
-| Reclaim policy | Retain | - |
-| StorageClass | none | none |
-
-> Kubernetes names must be lowercase, so `ivolvePV` / `ivolvePVC` are written as `ivolvepv` / `ivolvepvc`.
-
 ## Steps
 
 1. Create the namespace (if it does not exist):
@@ -53,14 +33,3 @@ Create a PersistentVolume (PV) and a PersistentVolumeClaim (PVC) to store applic
    kubectl describe pv ivolvepv
    kubectl describe pvc ivolvepvc -n ivolve
    ```
-
-## Screenshots
-Add your screenshots here:
-
-- `kubectl apply` output
-- `kubectl get pv,pvc` showing `Bound`
-
-## Notes
-- `storageClassName: ""` disables dynamic provisioning, so no StorageClass is used.
-- `volumeName: ivolvepv` makes the PVC bind to this specific PV.
-- `Retain` keeps the data on the node even if the PVC is deleted.
