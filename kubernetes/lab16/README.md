@@ -79,7 +79,6 @@ kubectl get pods -n kube-system | grep metrics-server
 
 The metrics-server pod is `1/1 Running`.
 
-![metrics server](screenshots/03-metrics-server.png)
 
 ## 4. Monitor real-time usage
 
