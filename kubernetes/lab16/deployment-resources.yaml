@@ -1,0 +1,19 @@
+# Snippet to merge into the existing ivolveapp Deployment (namespace: ivolve).
+# Only the "strategy" block and the container "resources" block are new.
+spec:
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxSurge: 0          # the ResourceQuota allows only 3 pods, so no extra surge pod
+      maxUnavailable: 1
+  template:
+    spec:
+      containers:
+      - name: ivolveapp    # keep the existing container name
+        resources:
+          requests:
+            cpu: "1"
+            memory: 1Gi
+          limits:
+            cpu: "2"
+            memory: 2Gi
