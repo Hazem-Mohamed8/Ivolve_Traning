@@ -71,7 +71,7 @@ kubectl apply -f rolebinding.yaml
 kubectl get sa,role,rolebinding -n ivolve
 ```
 
-![Service account, role and role binding created](01-sa-role-rolebinding.png)
+![](01-sa-role-rolebinding.png)
 
 ### 4. Create a token for the service account
 
@@ -88,6 +88,8 @@ kubectl auth can-i update deployments -n ivolve --as=ystem:serviceaccount:ivolve
 kubectl auth can-i delete deployments -n ivolve --as=ystem:serviceaccount:ivolve:jenkinssa
 kubectl auth can-i create deployments -n default --as=ystem:serviceaccount:ivolve:jenkinssa
 ```
+
+![](02-auth-can-i.png)
 
 ## Cleanup
 
