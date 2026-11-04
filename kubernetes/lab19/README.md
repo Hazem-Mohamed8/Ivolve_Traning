@@ -71,7 +71,7 @@ kubectl apply -f rolebinding.yaml
 kubectl get sa,role,rolebinding -n ivolve
 ```
 
-![Service account, role and role binding created](screenshots/01-sa-role-rolebinding.png)
+![Service account, role and role binding created](01-sa-role-rolebinding.png)
 
 ### 4. Create a token for the service account
 
