@@ -36,16 +36,6 @@ ivolve-app/
 
 The application and Dockerfile come from Lab 8. `k8s/deployment.yaml` is the `ivolveapp` Deployment from Lab 15 with the Lab 16 changes merged in (resource requests and limits, `maxSurge: 0`, 1 replica), so applying it from Jenkins does not undo the earlier labs.
 
-## How it connects to the previous labs
-
-| Previous lab    | Used here                                                                                            |
-| --------------- | ---------------------------------------------------------------------------------------------------- |
-| Lab 8 (Docker)  | Application code, Dockerfile, Docker Hub repository `hazemmohamed4/ivolve-app`                       |
-| Lab 5 (Trivy)   | Image vulnerability scan stage                                                                       |
-| Lab 9 (kubeadm) | The cluster Jenkins deploys to                                                                       |
-| Lab 12 to 15    | ConfigMap, Secret, PVC, MySQL StatefulSet and the `ivolveapp` Deployment that the pipeline updates   |
-| Lab 19 (RBAC)   | `jenkinssa` ServiceAccount and `ivolvedeployrole` give Jenkins access to the `ivolve` namespace only |
-
 ## Environment
 
 | Item                 | Value                                                                       |
