@@ -1,3 +1,6 @@
 [submodule "jenkins/jenkins/lab21/ivolve-app"]
 	path = jenkins/jenkins/lab21/ivolve-app
 	url = https://github.com/Hazem-Mohamed8/ivolve-app.git
+[submodule "jenkins/lab21/ivolve-app"]
+	path = jenkins/lab21/ivolve-app
+	url = https://github.com/Hazem-Mohamed8/ivolve-app.git
