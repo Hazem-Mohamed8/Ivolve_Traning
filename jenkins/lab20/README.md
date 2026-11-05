@@ -19,7 +19,7 @@
 
 The existing admin user (`hazem`) is kept.
 
-![Users list](images/01-users.png)
+![Users list](01-users.png)
 
 ### 3. Enable Role-Based Strategy
 
@@ -34,7 +34,7 @@ The existing admin user (`hazem`) is kept.
 | `admin`     | Overall/Administer                |
 | `read-only` | Overall/Read, Job/Read, View/Read |
 
-![Global roles](images/02-roles.png)
+![Global roles](02-roles.png)
 
 ### 5. Assign the roles
 
@@ -42,11 +42,11 @@ The existing admin user (`hazem`) is kept.
 
 `user1` assigned to `admin`:
 
-![Assign admin to user1](images/03-assign-user1-admin.png)
+![Assign admin to user1](03-assign-user1-admin.png)
 
 `user2` assigned to `read-only`:
 
-![Assign read-only to user2](images/04-assign-user2-read-only.png)
+![Assign read-only to user2](04-assign-user2-read-only.png)
 
 ## Verification
 
