@@ -4,3 +4,15 @@
 [submodule "jenkins/lab21/ivolve-app"]
 	path = jenkins/lab21/ivolve-app
 	url = https://github.com/Hazem-Mohamed8/ivolve-app.git
+[submodule "jenkins/lab22/jenkins/lab22/ivolve-app"]
+	path = jenkins/lab22/jenkins/lab22/ivolve-app
+	url = https://github.com/Hazem-Mohamed8/ivolve-app.git
+[submodule "jenkins/lab22/jenkins/lab22/jenkins-shared-lib"]
+	path = jenkins/lab22/jenkins/lab22/jenkins-shared-lib
+	url = https://github.com/Hazem-Mohamed8/jenkins-shared-lib
+[submodule "jenkins/lab22/jenkins-shared-lib"]
+	path = jenkins/lab22/jenkins-shared-lib
+	url = https://github.com/Hazem-Mohamed8/jenkins-shared-lib
+[submodule "jenkins/lab22/ivolve-app"]
+	path = jenkins/lab22/ivolve-app
+	url = https://github.com/Hazem-Mohamed8/ivolve-app.git
