@@ -1,0 +1,8 @@
+---
+- name: Configure managed node using roles
+  hosts: slaves
+  become: true
+  roles:
+    - docker
+    - kubectl
+    - jenkins
