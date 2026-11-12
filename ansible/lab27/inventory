@@ -1,0 +1,2 @@
+[slaves]
+172.31.9.204 ansible_user=ubuntu ansible_ssh_private_key_file=~/.ssh/id_rsa

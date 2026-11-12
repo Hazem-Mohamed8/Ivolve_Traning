@@ -1,0 +1,8 @@
+---
+- name: Install and configure MySQL
+  hosts: slaves
+  become: true
+  vars_files:
+    - vars/secrets.yml
+  roles:
+    - mysql
