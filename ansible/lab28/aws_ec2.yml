@@ -1,0 +1,14 @@
+plugin: amazon.aws.aws_ec2
+regions:
+  - eu-north-1
+filters:
+  tag:server: ivolve
+  instance-state-name: running
+hostnames:
+  - private-ip-address
+keyed_groups:
+  - key: tags.server
+    prefix: tag_server
+compose:
+  ansible_user: "'ubuntu'"
+  ansible_ssh_private_key_file: "'~/.ssh/id_rsa'"

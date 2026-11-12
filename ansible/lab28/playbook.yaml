@@ -1,0 +1,22 @@
+---
+- name: Configure dynamically discovered EC2
+  hosts: tag_server_ivolve
+  become: true
+  tasks:
+    - name: Install nginx
+      ansible.builtin.apt:
+        name: nginx
+        state: present
+        update_cache: true
+
+    - name: Start and enable nginx
+      ansible.builtin.systemd:
+        name: nginx
+        state: started
+        enabled: true
+
+    - name: Deploy custom index page
+      ansible.builtin.copy:
+        content: "Hello from iVolve - configured by Ansible dynamic inventory\n"
+        dest: /var/www/html/index.html
+        mode: "0644"
