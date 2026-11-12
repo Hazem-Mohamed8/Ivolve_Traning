@@ -26,8 +26,7 @@ Automated tasks:
 ansible-playbook -i inventory tools_playbook.yaml --syntax-check
 ansible-playbook -i inventory tools_playbook.yaml
 ```
-
-![playbook](Screenshot 2026-11-12 110604.png)
+![playbook run](Screenshot.png)
 
 ## 4) Verification on the Managed Node
 
